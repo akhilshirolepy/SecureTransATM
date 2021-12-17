@@ -1,0 +1,25 @@
+users - collection
+	- fullname
+	- email address
+	- password
+
+e
+
+account - collection
+	- userId => ref to User Schema
+	- account number
+	- ifsc code
+	- email address => ref to users
+	- status [active/pending]
+	- balence
+
+transactions - collection
+	- userId => ref to User Schema
+	- account number
+	- ifsc code
+	- email address
+	- type
+	- amount
+	- balence
+	- processing status
+	- date
